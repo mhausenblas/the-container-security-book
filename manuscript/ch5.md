@@ -2,7 +2,7 @@
 
 ## Basics
 
-## Open Policy Agent
+## Open Policy Agent (OPA)
 
 ## Networking
  
