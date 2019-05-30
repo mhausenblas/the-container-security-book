@@ -7,7 +7,7 @@ Containers themselves are a relatively new species, really going mainstream only
 The first wave kicked off when Docker (nee dotCloud) starting in 2013 and really taking off in 2014 found a way to make them useable by defining a nice packaging format and an abstraction level allowing developers to use them in a straight forward manner.
 All you had to learn was `docker build` and `docker run` and the Docker Hub would supply you with tons of apps and tools, ready to use.
 
-Then, the container orchestration wars—roughly 2015 to 2017—happened. Many of the early approaches turned out to be niche players and what at time of writing is used are mainly Kubernetes (cross-environment), Amazon Elastic Container Service (ECS), and Nomad.
+Then, the container orchestration wars, roughly 2015 to 2017, happened. Many of the early approaches turned out to be niche players and what at time of writing is used are mainly Kubernetes (cross-environment), Amazon Elastic Container Service (ECS), and Nomad.
 
 Then came the third wave: the era of the service meshes began in roughly began in early 2016 when Buoyant released its first iteration of Linkerd. Others followed, including Istio and AWS App Mesh and in early 2019 we witnessed the effort to start standardizing services meshes via the Service Mesh Interface (SMI).
 

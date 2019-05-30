@@ -45,7 +45,23 @@ This example also shows to things: it's always a matter of trust (in certain art
 In the context of this book, we define:
 
 Authorization
-: Specifying the set of privileges and circumstances to access a resource.
+: The set of *privileges* assigned to an *entity* specifying access to a *resource*.
+
+You can simplify that to: access control for authenticated entities.
+
+{aside}
+### EXAMPLE: Authorization
+
+Look at this file here:
+
+```sh
+~/tmp
+$ ls -al MINE
+-rw-------  1 mhausenblas  mhausenblas  0 30 May 14:30 MINE
+```
+
+What's the authorization regime here? Well, I as the entity (or: user) `mhausenblas` have the privileges (or: rights) to both read and write the resource (or: file) `MINE`. Needless to say that declaring this with `chmod 600 MINE` is pretty useless, if there would not be a piece of software enforcing said authorization.
+{/aside}
 
 ## Good Practices
 
