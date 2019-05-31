@@ -1,4 +1,5 @@
-#  Cloud native security foundations
+{id: ch_cn-sec-foundations}
+#  Cloud Native Security Foundations
 
 ## Identity
 

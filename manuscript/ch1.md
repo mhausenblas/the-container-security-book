@@ -17,14 +17,14 @@ This book is an attempt to change this.
 
 ## Scope Of The Book
 
-In scope for this book are:
+In scope for this book are the following topics:
 
-- Cloud native security foundations: identity, authentication, and authorization.
-- [Containers](http://containerz.info/) at large, including container images and how to build them (CI pipelines).
+- [Cloud native security foundations](#ch_cn-sec-foundations): identity, authentication, and authorization.
+- Containers at large, including container runtimes, images, and how to build them (CI pipelines).
 - Widely used container orchestrators, that is, Kubernetes, ECS, and Nomad.
 - Policy handling, including networking and workflow, with a focus on the Open Policy Agent.
 - Dealing with sensitive information in and with containers (aka: secrets).
-- Service meshes, that is, security features and considerations of Istio, App Mesh, Linkerd as well as the [SMI](https://smi-spec.io/).
+- Service meshes, that is, security features and considerations of Istio, App Mesh, Linkerd as well as the Service Mesh Interface.
 - Container-level penetration testing.
 
 ## The Audience
