@@ -1,5 +1,8 @@
 # Introduction
 
+Welcome to The Container Security Book (TCSB) and thanks for reading it.
+This is a free book, aiming to bring good practices around container security, from container images to runtime challenges to policies, and service mesh security to as many practitioners as possible. If you have feedback or want to discuss something, please visit the book's [forum](https://leanpub.com/container-security/forum).
+
 ## Why This Book?
 
 Containers themselves are a relatively new species, really going mainstream only in the last few years, starting around 2014. 

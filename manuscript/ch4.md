@@ -7,7 +7,7 @@
 {id: co-k8s}
 ## Kubernetes
 
-See https://kubernetes-security.info and …
+See https://kubernetes-security.info and the following
 
 {id: co-ecs}
 ## ECS
