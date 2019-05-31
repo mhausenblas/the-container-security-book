@@ -20,12 +20,12 @@ This book is an attempt to change this.
 In scope for this book are the following topics:
 
 - [Cloud native security foundations](#ch_cn-sec-foundations): identity, authentication, and authorization.
-- Containers at large, including container runtimes, images, and how to build them (CI pipelines).
-- Widely used container orchestrators, that is, Kubernetes, ECS, and Nomad.
-- Policy handling, including networking and workflow, with a focus on the Open Policy Agent.
-- Dealing with sensitive information in and with containers (aka: secrets).
-- Service meshes, that is, security features and considerations of Istio, App Mesh, Linkerd as well as the Service Mesh Interface.
-- Container-level penetration testing.
+- [Containers](#ch_containers) at large, including container runtimes, images, and how to build and distribute them securely, in an automated fashion.
+- Security aspects of widely used [container orchestrators](#ch_co), that is, Kubernetes, ECS, and Nomad.
+- [Policies](#ch_policies), including networking and workflow, with a focus on the Open Policy Agent.
+- Dealing with [sensitive information](#ch_secrets) in and with containers (aka: secrets).
+- [Service mesh security](#ch_meshes): security features and considerations of Istio, App Mesh, Linkerd as well as the Service Mesh Interface.
+- Container-level [penetration testing](#ch_pentesting).
 
 ## The Audience
 

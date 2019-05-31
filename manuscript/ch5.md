@@ -1,18 +1,31 @@
+{id: ch_policies}
 # Policies
 
+{id: basics-policies}
 ## Basics
 
+{id: policies-opa}
 ## Open Policy Agent (OPA)
 
+https://www.youtube.com/watch?v=Yup1FUc2Qn0
+
+{id: policies-networking}
 ## Networking
  
 Kubernetes NP and AWS security groups
  
+{id: policies-workflow}
 ## Workflow
 
-image signing/TUF, Grafeas
+see [image signing](#containers-signing) for basics
 
+Grafeas
+
+{id: gp-policies}
 ## Good Practices
 
+{id: av-policies}
 ## Attack Vectors
+
+
 
