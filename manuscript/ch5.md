@@ -13,9 +13,6 @@ https://www.youtube.com/watch?v=Yup1FUc2Qn0
 ## Networking
  
 Kubernetes NP and AWS security groups
- 
-{id: policies-workflow}
-## Workflow
 
 see [image signing](#containers-signing) for basics
 

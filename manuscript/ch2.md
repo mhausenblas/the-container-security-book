@@ -1,7 +1,7 @@
 {id: ch_cn-sec-foundations}
 #  Cloud Native Security Foundations
 
-{id: identity}
+{id: foundations-identity}
 ## Identity
 
 [Identity management](https://en.wikipedia.org/wiki/Identity_management) revolves around *entities* such as people or an application and their respective digital representation. An entity can have multiple identities with different attributes attached, potentially context-dependent.
@@ -23,7 +23,7 @@ Inspecting the website's identity reveals that I'm using a self signed certifica
 {/aside}
 
 
-{id: authn}
+{id: foundations-authn}
 ## Authentication
 
 In the context of this book, we define:
@@ -44,7 +44,7 @@ For example, I can claim to be an Austrian living in Ireland. The authentication
 This example also shows to things: it's always a matter of trust (in certain artifacts such as the bill) as well as that while it's possible to verify a claim, the opposite is usually not possible. How do I proof to you that I am *not* living in, say, Austria? :)
 {/aside}
 
-{id: authz}
+{id: foundations-authz}
 ## Authorization
 
 In the context of this book, we define:
@@ -71,6 +71,8 @@ What's the authorization regime here? Well, I as the entity (or: user) `mhausenb
 
 https://www.youtube.com/watch?v=TZ73EBP2a9Q
 
+{id: foundations-supplychain}
+## Supply Chain Security
 
 {id: gp-foundations}
 ## Good Practices
