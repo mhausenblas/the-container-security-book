@@ -16,7 +16,6 @@ Kubernetes NP and AWS security groups
 
 see [image signing](#containers-signing) for basics
 
-Grafeas
 
 {id: gp-policies}
 ## Good Practices

@@ -74,6 +74,10 @@ https://www.youtube.com/watch?v=TZ73EBP2a9Q
 {id: foundations-supplychain}
 ## Supply Chain Security
 
+[Grafeas](https://grafeas.io/)
+
+[In-toto](https://in-toto.github.io/)
+
 {id: gp-foundations}
 ## Good Practices
 
