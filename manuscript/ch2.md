@@ -22,6 +22,12 @@ For example, when I look at `mhausenblas.info`, I'd encounter something like the
 Inspecting the website's identity reveals that I'm using a self signed certificate, which is understandable given it's a GitHub page. 
 {/aside}
 
+In the context of containerized microservices, managing identities is such a central and necessary topic that an entire specification exists: the Secure Production Identity Framework for Everyone [SPIFFE](https://spiffe.io/).
+
+Every cloud provider has identity solutions[^awsiam].
+
+[^awsiam]: See, for example, [An overview of IAM in AWS](https://medium.com/@sirech/an-overview-of-iam-in-aws-1d9cbb1b31a4) for an introduction to how it works in Amazon's case.
+
 
 {id: foundations-authn}
 ## Authentication
