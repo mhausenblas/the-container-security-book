@@ -30,6 +30,16 @@ In scope for this book are the following topics:
 - [Service mesh security](#ch_meshes): security features and considerations of Istio, App Mesh, Linkerd as well as the Service Mesh Interface.
 - Container-level [penetration testing](#ch_pentesting).
 
+## Tenets And Orientation
+
+This book has three tenets:
+
+1. Security should be *accessible*. Both in the sense of understandable, even and especially for non-experts, as well as the content should be available for everyone, everywhere, for free.
+2. Not just with but *ahead of times*. Books have a tendency to rot. We believe that a living book, something that evolves and grows over time is the right approach to security. Also, some of the processes and tools discussed here have not yet enjoyed wide adoption. Doesn't matter, gotta be where the puck is going.
+3. Panta Rhei--everything flows. Security is a *never-ending process*, with all hands on deck. It's not the sole responsibility of your security team. Developers, architects, devops folks, SRE folks, networking folks, managers, your aunt and her dog. We all are responsible, all the time.
+
+Each chapter provides and introduction to get everyone on the same page, then discusses relevant concepts and tooling, and finally walks you trough good practices and attack vectors.
+
 ## The Audience
 
 Cloud native adopters. Developers. Container management system users and administrators. Security teams.
