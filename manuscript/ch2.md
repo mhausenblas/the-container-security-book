@@ -1,5 +1,10 @@
 {id: ch_cn-sec-foundations}
-#  Cloud Native Security Foundations
+#  Container Security Foundations
+
+In this chapter we first have a look at the conceptual underpinning of container security. It's the defense in depth principle we apply throughout. We then review the foundational topics of identity, authentication, and authorization, as well as have a look how a secure supply chain can be used.
+
+{id: foundations-did}
+## Defense In Depth
 
 The defense in depth (DID) onion diagram we're using throughout the book, looks as follows:
 
