@@ -18,8 +18,15 @@ https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-th
 
 secrets, encryption at rest
 
+Vault
+
+[Kamus](https://kamus.soluto.io/)
+
+
 {id: secrets-ecs}
 ## ECS
+
+[Specifying Sensitive Data](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data.html) in the official docs and also [ECS Secrets Done Right](https://hackernoon.com/ecs-secrets-done-right-9e094cfa6200)
 
 {id: gp-secrets}
 ## Good Practices
