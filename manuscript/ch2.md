@@ -1,6 +1,37 @@
 {id: ch_cn-sec-foundations}
 #  Cloud Native Security Foundations
 
+The defense in depth (DID) onion diagram we're using throughout the book, looks as follows:
+
+![Defense in depth onion diagram](ch2_did-onion.png)
+
+Some notes to the DID diagram:
+
+1. User data
+   a. The business core data itself
+   b. Personal Identifiable Information (PII)
+   c. Gotchas: leaks, GDPR (in Europe)
+2. Configuration data 
+   a. Sensitive configuration data (passwords, API keys), see the [Sensitive Data](#ch_secrets) chapter
+   b. Gotchas: commits-to-source, non-separated access (for example, dev has clear-text passwords)
+3. Source code
+   a. Static code analysis 
+   b. Runtime, for example, sanitizing user input
+   c. Gotchas: log-leaking
+4. Dependencies
+   a. Source code and binary-level
+   b. Code analysis
+   c. Gotchas: big surface, many languages
+5. Containers
+   a. Runtimes and images, see the [Containers](#ch_containers) chapter
+   b. Orchestration, see the [Container Orchestrators](#ch_co) chapter
+   c. Containers share a kernel (mitigations: Firecracker, gVisor)
+   d. Gotchas: unnecessary privileged users, no scans, trust
+6. Host
+   a. Compare full blown distro (Ubuntu, Amazon Linux) vs. minimal environment (container-optimized distributions)
+   b. Multi-tenancy requirements
+   c. Gotchas: Linux packages/CVEs,leaks, GDPR (in Europe)
+
 {id: foundations-identity}
 ## Identity
 
