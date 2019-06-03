@@ -6,7 +6,9 @@
 {id: basics-containers}
 ## Basics
 
-cgroups, namespaces, seccomp
+![Linux containers are process groups using cgroups and namespaces](ch3_containers.png)
+
+cgroups, namespaces, CoW file systems, seccomp
 
 {id: containers-images}
 ## Container Images
