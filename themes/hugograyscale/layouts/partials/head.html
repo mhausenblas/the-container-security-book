@@ -1,0 +1,27 @@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ $.Param "description" }}">
+    <meta name="author" content="{{ $.Param "author" }}">
+
+    <title>{{- $.Param "title" -}}</title>
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- SEO Prefs -->
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="origin-when-cross-origin">
+    {{- if isset .Site.Params "googlesiteverification" -}}<meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerification }}">{{- end -}}
+    {{- if isset .Site.Params "msvalidate" -}}<meta name="msvalidate.01" content="{{ .Site.Params.msValidate }}">{{- end -}}
+
+    <!-- Site Generator -->
+    <meta name="generator" content="Hugo {{ .Hugo.Version }}">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ "vendor/bootstrap/css/bootstrap.min.css" | relURL }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ "vendor/font-awesome/css/font-awesome.min.css" | relURL }}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ "css/grayscale.min.css" | relURL }}" rel="stylesheet">

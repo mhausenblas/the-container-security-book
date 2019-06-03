@@ -1,0 +1,8 @@
+baseURL = "https://container-security.info/"
+languageCode = "en-us"
+title = "The Container Security Book"
+theme = "hugograyscale"
+
+[params]
+	author = "Michael Hausenblas and Paavan Mistry"
+    description = "A practitioner's handbook on container security, see also https://leanpub.com/container-security"

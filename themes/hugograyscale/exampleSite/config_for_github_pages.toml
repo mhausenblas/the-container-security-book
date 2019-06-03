@@ -1,0 +1,8 @@
+baseURL = "https://runningstream.github.io/hugograyscale/"
+languageCode = "en-us"
+title = "Hugo Grayscale Theme"
+theme = "grayscale"
+[Params]
+    # Provide some metadata for search and indexing services
+    description = "A port of the Grayscale theme to Hugo"
+    author = "RunningStream"

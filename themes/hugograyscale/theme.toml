@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Grayscale"
+license = "MIT"
+licenselink = "https://github.com/runningstream/hugograyscale/blob/master/LICENSE"
+description = "Grayscale is a multi-section single page theme intended as a landing page."
+homepage = "https://github.com/runningstream/hugograyscale/"
+tags = ["minimal", "simple", "landing-page", "one-page"]
+features = []
+min_version = "0.41"
+
+[author]
+  name = "RunningStream"
+  homepage = "https://runningstream.net/"
+
+# If porting an existing theme
+[original]
+  name = "startbootstrap-grayscale"
+  homepage = "https://blackrockdigital.github.io/startbootstrap-grayscale/"
+  repo = "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"

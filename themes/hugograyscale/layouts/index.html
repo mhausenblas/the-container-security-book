@@ -1,0 +1,138 @@
+{{- define "main" -}}
+    {{- $.Scratch.Add "about" "about" -}}
+    {{- $.Scratch.Add "download" "download" -}}
+    {{- $.Scratch.Add "contact" "contact" -}}
+    {{- range $pagesect := (slice "about" "download" "contact") -}}
+        {{- if isset $.Params $pagesect -}}
+          {{- $param_pagesect := index $.Params $pagesect -}}
+          {{- if isset $param_pagesect "rename" -}}
+              {{- $.Scratch.Set $pagesect (index $param_pagesect "rename") -}}
+          {{- end -}}
+        {{- end -}}
+    {{- end -}}
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger improve-contrast-box" href="#page-top">{{ $.Params.title }}</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            {{- range $pagesect := ( slice "about" "download" "contact" ) -}}
+              {{- if isset $.Params $pagesect -}}
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger improve-contrast-box" href="#{{ $.Scratch.Get $pagesect }}">{{- $.Scratch.Get $pagesect -}}</a>
+                </li>
+              {{- end -}}
+            {{- end -}}
+            {{- if isset $.Params "menu" -}}
+              {{- range $menuitem := $.Params.menu -}}
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger improve-contrast-box" href="{{ $menuitem.url | safeHTML }}">{{- default $menuitem.url $menuitem.name | safeHTML -}}</a>
+                </li>
+              {{- end -}}
+            {{- end -}}
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Intro Header -->
+    {{- if isset $.Params "intro" -}}
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="improve-contrast-box">
+                <h1 class="brand-heading">{{ default "" $.Params.intro.header | safeHTML }}</h1>
+                <p class="intro-text">{{- default "" $.Params.intro.text | safeHTML -}}</p>
+              </div>
+              <a href="#{{ .Scratch.Get "about" }}" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    {{ end }}
+
+    <!-- About Section -->
+    {{- if isset $.Params "about" -}}
+    <section id="{{ .Scratch.Get "about" }}" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>{{- default "" $.Params.about.header | safeHTML -}}</h2>
+            <p>{{- default "" $.Params.about.text | safeHTML -}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{- end -}}
+
+    <!-- Download Section -->
+    {{- if isset $.Params "download" -}}
+    <section id="{{ .Scratch.Get "download" }}" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+            <div class="improve-contrast-box">
+              <h2>{{- default "" $.Params.download.header | safeHTML -}}</h2>
+              <p>{{- default "" $.Params.download.text | safeHTML -}}</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    {{- end -}}
+
+    <!-- Contact Section -->
+    {{- if isset $.Params "contact" -}}
+    <section id="{{ .Scratch.Get "contact" }}" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>{{- default "" $.Params.contact.header | safeHTML -}}</h2>
+            <p>{{- default "" $.Params.contact.text | safeHTML -}}</p>
+            {{- if isset $.Params "socialhandles" -}}
+            <ul class="list-inline banner-social-buttons">
+              {{- if isset $.Params.socialhandles "twitter" -}}
+              <li class="list-inline-item">
+                <a href="https://twitter.com/{{ $.Params.socialhandles.twitter }}" class="btn btn-default btn-lg">
+                  <i class="fa fa-twitter fa-fw"></i>
+                  <span class="network-name">Twitter</span>
+                </a>
+              </li>
+              {{- end -}}
+              {{- if isset $.Params.socialhandles "github" -}}
+              <li class="list-inline-item">
+                <a href="https://github.com/{{ $.Params.socialhandles.github }}" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              {{- end -}}
+              {{- if isset $.Params.socialhandles "googplus" -}}
+              <li class="list-inline-item">
+                <a href="https://plus.google.com/+{{ $.Params.socialhandles.googplus }}/posts" class="btn btn-default btn-lg">
+                  <i class="fa fa-google-plus fa-fw"></i>
+                  <span class="network-name">Google+</span>
+                </a>
+              </li>
+              {{- end -}}
+            </ul>
+            {{- end -}}
+          </div>
+        </div>
+      </div>
+    </section>
+    {{- end -}}
+
+    {{- if isset $.Params "mapsapikey" -}}
+    <!-- Map Section -->
+    <div id="map"></div> 
+    {{- end -}}
+
+{{- end -}}
