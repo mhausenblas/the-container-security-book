@@ -37,6 +37,10 @@ Some notes to the DID diagram:
    b. Multi-tenancy requirements
    c. Gotchas: Linux packages/CVEs,leaks, GDPR (in Europe)
 
+There are several documents available, such as the UK's [Security architecture anti-patterns](https://www.ncsc.gov.uk/whitepaper/security-architecture-anti-patterns) that
+
+Processes, such as [The Kubernetes Security Process](https://kubernetes.io/blog/2017/05/kubernetes-security-process-explained/)
+
 {id: foundations-identity}
 ## Identity
 

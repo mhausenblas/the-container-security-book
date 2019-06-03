@@ -10,7 +10,10 @@
 
 PSP vs pod security constraints
 
-Cory O'Daniel wrote a useful piece on [Kubernetes: Assigning Pod Security Policies with RBAC](https://medium.com/coryodaniel/kubernetes-assigning-pod-security-policies-with-rbac-2ad2e847c754)
+Further resources:
+
+- Cory O'Daniel wrote a useful piece on [Kubernetes: Assigning Pod Security Policies with RBAC](https://medium.com/coryodaniel/kubernetes-assigning-pod-security-policies-with-rbac-2ad2e847c754)
+- Peter Balogh has some great, visual explanations in [An illustrated deepdive into Pod Security Policies](https://banzaicloud.com/blog/pod-security-policy/).
 
 ### ECS
 

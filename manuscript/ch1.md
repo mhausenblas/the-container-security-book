@@ -30,7 +30,12 @@ In scope for this book are the following topics:
 - [Service mesh security](#ch_meshes): security features and considerations of Istio, App Mesh, Linkerd as well as the Service Mesh Interface.
 - Container-level [penetration testing](#ch_pentesting).
 
-## Tenets And Orientation
+Not in scope, for now:
+
+- Lambda
+- WASM
+
+## Tenets
 
 This book has three tenets:
 
@@ -38,12 +43,15 @@ This book has three tenets:
 2. Not just with but *ahead of times*. Books have a tendency to rot. We believe that a living book, something that evolves and grows over time is the right approach to security. Also, some of the processes and tools discussed here have not yet enjoyed wide adoption. Doesn't matter, gotta be where the puck is going.
 3. Panta Rhei--everything flows. Security is a *never-ending process*, with all hands on deck. It's not the sole responsibility of your security team. Developers, architects, devops folks, SRE folks, networking folks, managers, your aunt and her dog. We all are responsible, all the time.
 
+### Audience
+The Audience: Cloud native adopters. Developers. Container management system users and administrators. Security teams.
+
+### How To Use This Book
+
 Each chapter provides an introduction to get everyone on the same page, then discusses relevant concepts and tooling, and finally walks you trough good practices and attack vectors.
 
-## The Audience
+Self-container
 
-Cloud native adopters. Developers. Container management system users and administrators. Security teams.
-
-## How Can I Contribute?
+### How Can I Contribute?
 
 Send in a pull request (PR) against the repo [mhausenblas/the-container-security-book](https://github.com/mhausenblas/the-container-security-book) or raise an issue. If the PR is accepted, your name will be added to the list of authors on the front page.
