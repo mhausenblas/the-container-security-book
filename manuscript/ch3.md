@@ -7,6 +7,9 @@
 ## Basics
 
 cgroups, namespaces, seccomp
+### seccomp
+
+`seccomp` or secure computing mode is a computer security facility in Linux kernel. Seccomp monitors syscalls.
 
 {id: containers-images}
 ## Container Images
