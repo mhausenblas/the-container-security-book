@@ -9,7 +9,7 @@
 
 ![Kubernetes high-level architecture](ch4_k8s-arch.png)
 
-See https://kubernetes-security.info for general introduction to Kubernetes security and the following:
+See https://kubernetes-security.info for general introduction to Kubernetes security as well as https://kubernetes.io/docs/concepts/security/ and the following:
 
 - rbac.dev
 - [rback](https://github.com/team-soteria/rback)

@@ -29,6 +29,8 @@ ECS does not have an equivalent expressive abstraction to Kubernetes' Pod Securi
  
 Kubernetes NP and AWS security groups
 
+https://glasnostic.com/blog/mitigating-deployment-risk-in-microservice-architectures-quarantine
+
 see [image signing](#containers-signing) for basics
 
 {id: policies-opa}

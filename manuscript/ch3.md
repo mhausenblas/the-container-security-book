@@ -38,9 +38,12 @@ In alphabetical order:
 - [flagger](https://flagger.app/)
 - [Gitkube](https://gitkube.sh/), for example, with [EKS](https://aws.amazon.com/blogs/opensource/git-push-deploy-app-eks-gitkube/))
 - [Harness](https://harness.io/)
+- [Razee](https://github.com/razee-io/Razee)
 - [Spinnaker](https://www.spinnaker.io/)
 
 TODO: create table comparing above offerings along: SaaS/OSS, security, model (pull/push), supports (Kube, others)
+
+Notable: https://securityboulevard.com/2019/05/20-best-continuous-integration-tools-a-guide-to-optimizing-your-ci-cd-processes/
 
 {id: containers-signing}
 ### Image Signing
