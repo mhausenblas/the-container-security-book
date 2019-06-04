@@ -8,10 +8,19 @@
 
 ![Linux containers are process groups using cgroups and namespaces](ch3_containers.png)
 
-cgroups, namespaces, CoW file systems, seccomp
+cgroups, namespaces, CoW file systems
+
+{id: containers-runtimes}
+## Container Runtimes
+
+OCI runtime, containerd, etc.
+
+seccomp, etc.
 
 {id: containers-images}
 ## Container Images
+
+OCI image, etc.
 
 {id: containers-build}
 ## Building Container Images Securely
