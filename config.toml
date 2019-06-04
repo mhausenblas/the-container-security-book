@@ -1,4 +1,4 @@
-baseURL = "https://container-security.info/"
+baseURL = "https://container-security.guide/"
 languageCode = "en-us"
 title = "The Container Security Book"
 theme = "hugograyscale"
