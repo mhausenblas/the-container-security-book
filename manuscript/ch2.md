@@ -66,6 +66,8 @@ In the context of containerized microservices, managing identities is such a cen
 
 Every cloud provider has identity solutions[^awsiam].
 
+Kubernetes has, with its service account abstraction, a very explicit and clean way to [deal with identity](https://www.linuxjournal.com/content/kubernetes-identity-management-authentication).
+
 [^awsiam]: See, for example, [An overview of IAM in AWS](https://medium.com/@sirech/an-overview-of-iam-in-aws-1d9cbb1b31a4) for an introduction to how it works in Amazon's case.
 
 

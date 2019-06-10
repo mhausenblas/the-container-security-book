@@ -33,6 +33,8 @@ https://glasnostic.com/blog/mitigating-deployment-risk-in-microservice-architect
 
 see [image signing](#containers-signing) for basics
 
+https://cloudonaut.io/more-than-25-ssl-certificates-with-ecs/
+
 {id: policies-opa}
 ## Open Policy Agent (OPA)
 
