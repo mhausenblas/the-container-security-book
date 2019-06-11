@@ -25,12 +25,30 @@ OCI image, etc.
 {id: containers-build}
 ## Building Container Images Securely
 
-There are a number of [continuous integration](https://www.martinfowler.com/articles/continuousIntegration.html) tools available, including but not limited to the following: [Argo](https://argoproj.github.io/), AWS [CodePipeline](https://aws.amazon.com/codepipeline/), [CircleCI](https://www.circle.com/), [Codeship](http://codeship.com/), GitHub [Actions](https://jasonet.co/posts/use-github-actions-for-ci/), GitLab [Continuous Integration](https://about.gitlab.com/product/continuous-integration/), [Jenkins](https://jenkins.io/), [TeamCity](https://www.jetbrains.com/teamcity/), [Travis](https://travis-ci.org/), and shell scripts invoking `docker build`.
+There are a number of [continuous integration](https://www.martinfowler.com/articles/continuousIntegration.html) 
+tools and approaches available, including but not limited to the following:
 
-You could also have a look at [DockerSlim](https://dockersl.im) which promises not only to reduce the size of the container image but also to auto-generate SECCOMP and Apparmor profiles.
+- [Argo](https://argoproj.github.io/)
+- AWS [CodePipeline](https://aws.amazon.com/codepipeline/)
+- [CircleCI](https://www.circle.com/)
+- [Codeship](http://codeship.com/)
+- GitHub [Actions](https://jasonet.co/posts/use-github-actions-for-ci/)
+- GitLab [Continuous Integration](https://about.gitlab.com/product/continuous-integration/)
+- [Jenkins](https://jenkins.io/)
+- [TeamCity](https://www.jetbrains.com/teamcity/)
+- [Travis](https://travis-ci.org/)
+- Shell scripts invoking `docker build` directly
+
+You could also have a look at [DockerSlim](https://dockersl.im) which promises 
+not only to reduce the size of the container image but also to auto-generate 
+SECCOMP and Apparmor profiles.
+
+As one would expect, there are a number of challenges in the context of 
+[CI/CD pipelines](https://thenewstack.io/the-biggest-security-risks-lurking-in-your-ci-cd-pipeline).
 
 {id: containers-delivery}
 ## Distributing Container Images Securely
+
 
 {id: containers-registries}
 ### Using A Container Registry

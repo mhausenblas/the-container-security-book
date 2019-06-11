@@ -44,7 +44,6 @@ There are several resources available that document and/or advice on good and ba
 - [Security Goals - Automatic compliance reporting for Kubernetes](https://github.com/cds-snc/security-goals) of the Canadian Digital Service
 
 
-
 {id: foundations-identity}
 ## Identity
 
