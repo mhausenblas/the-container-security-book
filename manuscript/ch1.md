@@ -37,3 +37,7 @@ Cloud native adopters. Developers. Container management system users and adminis
 ## How Can I Contribute?
 
 Send in a pull request (PR) against the repo [mhausenblas/the-container-security-book](https://github.com/mhausenblas/the-container-security-book) or raise an issue. If the PR is accepted, your name will be added to the list of authors on the front page.
+
+## How Containers Fit In Modern Application Architecture
+
+
