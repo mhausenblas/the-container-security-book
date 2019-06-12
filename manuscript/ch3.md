@@ -22,16 +22,8 @@ As an example, Docker has an [opinionated approach](https://docs.docker.com/engi
 ### Capabilities
 
 <More content on Capabilities to be added here in relation to the seccomp section above>
+
 ![Linux containers are process groups using cgroups and namespaces](ch3_containers.png)
-
-cgroups, namespaces, CoW file systems
-
-{id: containers-runtimes}
-## Container Runtimes
-
-OCI runtime, containerd, etc.
-
-seccomp, etc.
 
 {id: containers-images}
 ## Container Images
