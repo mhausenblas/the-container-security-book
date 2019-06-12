@@ -22,6 +22,16 @@ As an example, Docker has an [opinionated approach](https://docs.docker.com/engi
 ### Capabilities
 
 <More content on Capabilities to be added here in relation to the seccomp section above>
+![Linux containers are process groups using cgroups and namespaces](ch3_containers.png)
+
+cgroups, namespaces, CoW file systems
+
+{id: containers-runtimes}
+## Container Runtimes
+
+OCI runtime, containerd, etc.
+
+seccomp, etc.
 
 {id: containers-images}
 ## Container Images
@@ -46,12 +56,35 @@ Established in June 2015 by Docker, CoreOS and other leaders in the container in
 
 <To add details and diagrams to explain the container isolation approaches by these projects>
 
+OCI image, etc.
 
 {id: containers-build}
 ## Building Container Images Securely
 
+There are a number of [continuous integration](https://www.martinfowler.com/articles/continuousIntegration.html) 
+tools and approaches available, including but not limited to the following:
+
+- [Argo](https://argoproj.github.io/)
+- AWS [CodePipeline](https://aws.amazon.com/codepipeline/)
+- [CircleCI](https://www.circle.com/)
+- [Codeship](http://codeship.com/)
+- GitHub [Actions](https://jasonet.co/posts/use-github-actions-for-ci/)
+- GitLab [Continuous Integration](https://about.gitlab.com/product/continuous-integration/)
+- [Jenkins](https://jenkins.io/)
+- [TeamCity](https://www.jetbrains.com/teamcity/)
+- [Travis](https://travis-ci.org/)
+- Shell scripts invoking `docker build` directly
+
+You could also have a look at [DockerSlim](https://dockersl.im) which promises 
+not only to reduce the size of the container image but also to auto-generate 
+SECCOMP and Apparmor profiles.
+
+As one would expect, there are a number of challenges in the context of 
+[CI/CD pipelines](https://thenewstack.io/the-biggest-security-risks-lurking-in-your-ci-cd-pipeline).
+
 {id: containers-delivery}
 ## Distributing Container Images Securely
+
 
 {id: containers-registries}
 ### Using A Container Registry
@@ -61,7 +94,19 @@ Docker Hub, Quay, Harbor, ECR
 {id: containers-cd}
 ### Continuous Delivery
 
-GitOps/flagger, Spinnaker
+In alphabetical order:
+
+- [Argo](https://argoproj.github.io/)
+- [Codefresh](https://codefresh.io/)
+- [flagger](https://flagger.app/)
+- [Gitkube](https://gitkube.sh/), for example, with [EKS](https://aws.amazon.com/blogs/opensource/git-push-deploy-app-eks-gitkube/))
+- [Harness](https://harness.io/)
+- [Razee](https://github.com/razee-io/Razee)
+- [Spinnaker](https://www.spinnaker.io/)
+
+TODO: create table comparing above offerings along: SaaS/OSS, security, model (pull/push), supports (Kube, others)
+
+Notable: https://securityboulevard.com/2019/05/20-best-continuous-integration-tools-a-guide-to-optimizing-your-ci-cd-processes/
 
 {id: containers-signing}
 ### Image Signing
