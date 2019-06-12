@@ -29,8 +29,22 @@ As an example, Docker has an [opinionated approach](https://docs.docker.com/engi
 {id: container-runtimes}
 ## Container Runtimes
 
+The Open Container Initiative (OCI) is a lightweight, open governance structure, formed under the auspices of the Linux Foundation, for the express purpose of creating open industry standards around container formats and runtime.
 
-runc, containerd, and RuntimeClass that can use kata, gVisor, Firecracker for better container isolation.
+Established in June 2015 by Docker, CoreOS and other leaders in the container industry, the OCI currently contains two specifications: the Runtime Specification ([runtime-spec](https://github.com/opencontainers/runtime-spec)) and the Image Specification ([image-spec](https://github.com/opencontainers/image-spec)). The Runtime Specification outlines how to run a “filesystem bundle” that is unpacked on disk. At a high-level an OCI implementation would download an OCI Image then unpack that image into an OCI Runtime filesystem bundle. At this point the OCI Runtime Bundle would be run by an OCI Runtime.
+
+### runc
+
+[`runc`](https://github.com/opencontainers/runc) is a tool for spawning and running containers according to the OCI specification. `runc` can be used to generate an OCI specification using the command below. runc provides a spec command to generate a base template spec that you are then able to edit. To find features and documentation for fields in the spec please refer to the specs repository.
+
+### containerd and containerd-shim
+
+[containerd](https://github.com/containerd/containerd) is an industry-standard container runtime with an emphasis on simplicity, robustness and portability. It is available as a daemon for Linux and Windows, which can manage the complete container lifecycle of its host system: image transfer and storage, container execution and supervision, low-level storage and network attachments.
+
+
+### Ongoing efforts in container isolation - Kata Containers, FireCracker, gVisor and rust-vmm
+
+<To add details and diagrams to explain the container isolation approaches by these projects>
 
 
 {id: containers-build}
