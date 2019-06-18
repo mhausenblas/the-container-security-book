@@ -42,6 +42,8 @@ https://cloudonaut.io/more-than-25-ssl-certificates-with-ecs/
 
 https://www.youtube.com/watch?v=Yup1FUc2Qn0
 
+https://play.openpolicyagent.org/
+
 {id: gp-policies}
 ## Good Practices
 
