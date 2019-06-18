@@ -13,6 +13,7 @@ See https://kubernetes-security.info for general introduction to Kubernetes secu
 
 - rbac.dev
 - [rback](https://github.com/team-soteria/rback)
+- SA https://medium.com/better-programming/k8s-tips-using-a-serviceaccount-801c433d0023
 
 {id: co-ecs}
 ## ECS

@@ -42,6 +42,7 @@ There are several resources available that document and/or advice on good and ba
 - UK's [Security architecture anti-patterns](https://www.ncsc.gov.uk/whitepaper/security-architecture-anti-patterns) 
 - [The Kubernetes Security Process](https://kubernetes.io/blog/2017/05/kubernetes-security-process-explained/)
 - [Security Goals - Automatic compliance reporting for Kubernetes](https://github.com/cds-snc/security-goals) of the Canadian Digital Service
+- [The Three Faces of DevSecOps](https://www.infoq.com/presentations/devsecops-2019/)
 
 
 {id: foundations-identity}

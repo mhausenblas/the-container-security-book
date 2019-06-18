@@ -60,6 +60,8 @@ Established in June 2015 by Docker, CoreOS and other leaders in the container in
 
 OCI image, etc.
 
+https://blog.bitnami.com/2019/04/trusting-images-from-docker-hub.html
+
 {id: containers-build}
 ## Building Container Images Securely
 
