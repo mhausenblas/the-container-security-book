@@ -22,6 +22,8 @@ Vault
 
 [Kamus](https://kamus.soluto.io/)
 
+GoDaddy's [Kubernetes External Secrets](https://github.com/godaddy/kubernetes-external-secrets) allows you to use external secret management systems such as the AWS Secrets Manager to securely add secrets in Kubernetes. 
+
 
 {id: secrets-ecs}
 ## ECS
