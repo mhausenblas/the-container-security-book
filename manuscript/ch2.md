@@ -136,3 +136,15 @@ https://www.youtube.com/watch?v=TZ73EBP2a9Q
 {id: av-foundations}
 ## Attack Vectors
 
+{id: foundations-threatmodel}
+## Threat Model
+
+With any system a key element of it's security is determining the appropriate threat model(s), by reasoning about likely groups of attackers and the approaches they might take to attempting to compromise its security. Understanding the likely threat models allows organizations to prioritise work on the security controls they apply to their systems.  For example the threat model of a multi-tenant Kubernetes cluster which runs untrusted code, is very different to an individual Docker installation running only images produced within the organization.
+
+With containerized systems there are a number of potential threat models to consider :-
+
+- **External Attackers** - This is the most common threat model. It involves an attacker originating outside the containerized environment and attempting to gain unauthorised access to it.  Typical attack vectors for this threat model are listening services (e.g. Kubernetes API server or Docker daemon listening on a TCP port).
+
+- **Compromised Container** - This threat model considers an attacker who has gained unauthorized access to a single container either via a vulnerability in the software running within the container, or via a compromise of a container image in its repository.  Here the goal of the attacler is generally to escalate their access, either to other containers within the system or to the control plane of the containerized environment.  In addition to vectors available to external attackers, in the compromised container scenario, the attacker has access to container filesystem and may be able to attack a shared Linux kernel.  
+
+- **Compromised/Malicious User** - In a multi-user system such as Kubernetes it can be important to consider the risk of privilege escalation where a user's credentials have been compromised and the attacker is attempting to gain additional access to the system.  Addressing this threat model typically includes considering authorization controls that are in place within the environment, to reduce the risk of privilege escalation.
