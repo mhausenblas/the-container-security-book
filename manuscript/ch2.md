@@ -133,10 +133,7 @@ https://www.youtube.com/watch?v=TZ73EBP2a9Q
 {id: gp-foundations}
 ## Good Practices
 
-{id: av-foundations}
-## Attack Vectors
-
-{id: foundations-threatmodel}
+{id: threatmodel-foundations}
 ## Threat Model
 
 With any system a key element of it's security is determining the appropriate threat model(s), by reasoning about likely groups of attackers and the approaches they might take to attempting to compromise its security. Understanding the likely threat models allows organizations to prioritise work on the security controls they apply to their systems.  For example the threat model of a multi-tenant Kubernetes cluster which runs untrusted code, is very different to an individual Docker installation running only images produced within the organization.

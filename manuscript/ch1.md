@@ -22,7 +22,7 @@ This book is an attempt to change this.
 
 In scope for this book are the following topics:
 
-- [Cloud native security foundations](#ch_cn-sec-foundations): identity, authentication, and authorization.
+- [Cloud native security foundations](#ch_cn-sec-foundations): principles like defense in depth, policies, identity, authentication, authorization, and threat modelling.
 - [Containers](#ch_containers) at large, including container runtimes, images, and how to build and distribute them securely, in an automated fashion.
 - Security aspects of widely used [container orchestrators](#ch_co), that is, Kubernetes, ECS, and Nomad.
 - [Policies](#ch_policies), including networking and workflow, with a focus on the Open Policy Agent.
