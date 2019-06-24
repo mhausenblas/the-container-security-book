@@ -64,6 +64,5 @@ If you want to report a mistake, or want to contribute to this book, then please
 
 In reverse order (newest on top):
 
-* Rory McCune
 * Duffie Cooley
 * Justin Cormack
