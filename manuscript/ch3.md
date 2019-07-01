@@ -121,8 +121,8 @@ https://www.youtube.com/watch?v=PSujE86JvBk
 
 #### Tooling
 
-* Porteris
-* ???
+* [Porteris](https://github.com/IBM/portieris), a Kubernetes admission controller for verifying image trust with Notary. 
+* [Docker Content Trust (DCT)](https://docs.docker.com/engine/security/trust/content_trust/)
 
 {id: tm-containers}
 ## Threat Model
