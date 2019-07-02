@@ -21,11 +21,13 @@
 
 [SMI](https://smi-spec.io/)
 
+
+{id: tm-meshes}
+## Threat Model
+
+
 {id: gp-meshes}
 ## Good Practices
-
-{id: av-meshes}
-## Attack Vectors
 
 
 

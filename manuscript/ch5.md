@@ -44,11 +44,11 @@ https://www.youtube.com/watch?v=Yup1FUc2Qn0
 
 https://play.openpolicyagent.org/
 
+{id: tm-policies}
+## Threat Model
+
 {id: gp-policies}
 ## Good Practices
-
-{id: av-policies}
-## Attack Vectors
 
 
 

@@ -30,9 +30,10 @@ GoDaddy's [Kubernetes External Secrets](https://github.com/godaddy/kubernetes-ex
 
 [Specifying Sensitive Data](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data.html) in the official docs and also [ECS Secrets Done Right](https://hackernoon.com/ecs-secrets-done-right-9e094cfa6200)
 
+
+{id: tm-secrets}
+## Threat Model
+
 {id: gp-secrets}
 ## Good Practices
-
-{id: av-secrets}
-## Attack Vectors
 

@@ -23,11 +23,10 @@ See https://kubernetes-security.info for general introduction to Kubernetes secu
 {id: co-nomad}
 ## Nomad
 
+{id: tm-co}
+## Threat Model
+
 {id: gp-co}
 ## Good Practices
-
-{id: av-co}
-## Attack Vectors
-
 
 
