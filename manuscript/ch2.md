@@ -8,7 +8,7 @@ In this chapter we first have a look at the conceptual underpinning of container
 
 The defense in depth (DID) onion diagram we're using throughout the book, looks as follows:
 
-![Defense in depth onion diagram](ch2_did-onion.png)
+![Defense in depth onion diagram](resources/ch2_did-onion.png)
 
 Some notes to the DID diagram:
 
